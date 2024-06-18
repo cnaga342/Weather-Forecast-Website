@@ -9,6 +9,7 @@ app.use(express.json());
 
 const API_KEY = process.env.WEATHER_API_KEY;
 
+
 app.get('/weather', async (req, res) => {
     const { location } = req.query;
     if (!location) {
